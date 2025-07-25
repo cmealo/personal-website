@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #111;
+}
+
+#intro,
+#about,
+#contact,
+#portfolio {
+  /* display: grid; */
+}
