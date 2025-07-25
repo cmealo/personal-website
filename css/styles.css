@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: inter, sans-serif;
   line-height: 1.6;
   background-color: #fff;
   color: #111;
@@ -10,5 +10,5 @@ body {
 #about,
 #contact,
 #portfolio {
-  /* display: grid; */
+  display: grid;
 }
