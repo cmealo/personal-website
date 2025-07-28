@@ -4,46 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Christie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="nav-wrapper grad-d">
+        <div class="logo color-white">Christie Mealo</div>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section id="contact">
-        <h1>Contact Me</h1>
-        <p>
-          If you'd like to connect, fill out the form below and I'll get back to
-          you as soon as I can.
-        </p>
-
-        <form id="contact-form" class="form">
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+        <div class="grid">
+          <div class="contact-head grid-span-12">
+            <h1>Contact Me</h1>
+            <p>
+              If you'd like to connect, fill out the form below and I'll get
+              back to you as soon as I can.
+            </p>
           </div>
 
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+          <form id="contact-form" class="form grid-span-12">
+            <div class="form-field grid-span-12 grid-span-6-md">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
 
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
+            <div class="form-field grid-span-12 grid-span-6-md">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
 
-          <button type="submit">Send Message</button>
-        </form>
+            <div class="form-field grid-span-12">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-field grid-span-12">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 

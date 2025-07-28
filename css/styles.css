@@ -1,0 +1,362 @@
+/* COLORS -------------- */
+
+/*--- Solid Background Utility Classes --- */
+
+.bg-color-black {
+  background-color: #000000;
+}
+.bg-color-indigo {
+  background-color: #1a103d;
+}
+.bg-color-electric-purple {
+  background-color: #4a00e0;
+}
+.bg-color-soft-purple {
+  background-color: #8e2de2;
+}
+.bg-color-electric-teal {
+  background-color: #00ffe0;
+}
+.bg-color-cool-grey {
+  background-color: #363645;
+}
+.bg-color-super-lite-cool-grey {
+  background-color: #f7f9fa;
+}
+
+/* --- Font Color Utility Classes --- */
+
+.color-black {
+  color: #000000;
+}
+.color-white {
+  color: #ffffff;
+}
+.color-indigo {
+  color: #1a103d;
+}
+.color-electric-purple {
+  color: #4a00e0;
+}
+.color-md-purple {
+  color: #6708bb;
+}
+.color-soft-purple {
+  color: #8e2de2;
+}
+.color-md-blue {
+  color: #2a71f4;
+}
+.color-electric-teal {
+  color: #00ffe0;
+}
+.color-cool-grey {
+  color: #363645;
+}
+.color-super-lite-cool-grey {
+  color: #f7f9fa;
+}
+
+/*--- Gradient Utility Classes --- */
+
+.grad-a {
+  background: linear-gradient(90deg, #000000, #4a00e0);
+}
+
+.grad-b {
+  background: linear-gradient(90deg, #1a103d, #00ffe0);
+}
+
+.grad-c {
+  background: linear-gradient(90deg, #8e2de2, #00ffe0);
+}
+
+.grad-d {
+  background: linear-gradient(90deg, #000000, #4a00e0, #00ffe0);
+}
+
+.grad-e {
+  background: linear-gradient(90deg, #000000, #8e2de2, #00ffe0);
+}
+
+.grad-f {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2, #00ffe0);
+}
+
+/* Sticky Layout ------------------ */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes the footer to the bottom */
+}
+
+/* NAVIGATION ------------------ */
+
+/* --- Nav Wrapper Layout --- */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+/* Logo Styling */
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* Mobile Nav Stack */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+/* Nav Links */
+.nav li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.nav li a:hover {
+  color: #ffffff;
+}
+
+/* Horizontal Layout for Desktop */
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}
+
+/* CONTENT  ------------------ */
+
+/* --- Basic headings --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+/* --- Basic Layout --- */
+body {
+  margin: 0;
+  font-family: inter, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #111;
+}
+
+/* --- Global Section Spacing --- */
+section {
+  padding: 1rem 1rem 1rem 1rem; /* top, right, bottom, left */
+}
+
+/* --- Grid Container --- */
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* --- Grid Column Spans - Mobile first full width --- */
+
+.grid-span-1,
+.grid-span-2,
+.grid-span-3,
+.grid-span-4,
+.grid-span-5,
+.grid-span-6,
+.grid-span-7,
+.grid-span-8,
+.grid-span-9,
+.grid-span-10,
+.grid-span-11,
+.grid-span-12 {
+  grid-column: span 12;
+}
+
+/* --- Grid Column Spans - Web width --- */
+
+@media (min-width: 768px) {
+  .grid-span-1 {
+    grid-column: span 1;
+  }
+  .grid-span-2 {
+    grid-column: span 2;
+  }
+  .grid-span-3 {
+    grid-column: span 3;
+  }
+  .grid-span-4 {
+    grid-column: span 4;
+  }
+  .grid-span-5 {
+    grid-column: span 5;
+  }
+  .grid-span-6 {
+    grid-column: span 6;
+  }
+  .grid-span-7 {
+    grid-column: span 7;
+  }
+  .grid-span-8 {
+    grid-column: span 8;
+  }
+  .grid-span-9 {
+    grid-column: span 9;
+  }
+  .grid-span-10 {
+    grid-column: span 10;
+  }
+  .grid-span-11 {
+    grid-column: span 11;
+  }
+  .grid-span-12 {
+    grid-column: span 12;
+  }
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* FORM  ------------------ */
+
+/* --- Form layout --- */
+.form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.25rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+blockquote {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.6;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* PORTFOLIO -----------  */
+
+article.project img {
+  border: 10px solid #000;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+/* Generic Button Style */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.2); /* box-shadow: offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+/*  Hover  Button*/
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+}
+
+/* FOOTER -----------  */
+
+footer {
+  padding: 1rem 1rem 0.5rem 1rem; /* top, right, bottom, left */
+  background-color: #000;
+  color: #fff;
+}
+
+/* OTHER SPECIAL CLASSES & OVERRIDES */
+
+/* Remove top padding */
+.no-pt {
+  padding-top: 0 !important;
+}
+
+/* Remove bottom padding */
+.no-pb {
+  padding-bottom: 0 !important;
+}
+
+.no-mt {
+  margin-top: 0 !important;
+}
+
+/* Remove bottom margin */
+.no-mb {
+  margin-bottom: 0 !important;
+}

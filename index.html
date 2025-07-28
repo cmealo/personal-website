@@ -4,33 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christie's Personal Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="nav-wrapper grad-d">
+        <div class="logo color-white">Christie Mealo</div>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section id="intro">
-        <div class="intro-container">
-          <div class="photo">
-            <img src="https://placehold.co/400x600" alt="Christie's photo" />
+      <section
+        id="intro"
+        class="bg-color-super-lite-cool-grey bg-color-electric-teal bg-color-soft-purple"
+      >
+        <div class="grid">
+          <div class="photo grid-span-3">
+            <img src="img/me-1.jpeg" alt="Christie's photo" />
           </div>
-          <div class="blurb">
+          <div class="blurb grid-span-9">
             <blockquote>
               <p>
                 “I build bold, human-centered strategies at the intersection of
-                AI, data, and product. Whether I’m leading teams or launching
-                ventures, my goal is always the same: make the future more
-                ethical, more efficient, and a hell of a lot more interesting.”
+                AI, data, and product. Whether I’m leading cross-functional
+                teams or launching ventures, my work is about building smarter
+                systems, better outcomes, and tech that actually matters.”
               </p>
             </blockquote>
           </div>
@@ -38,43 +50,44 @@
       </section>
 
       <section id="services">
-        <h2>Services</h2>
+        <h2 class="color-electric-purple no-mb">Services</h2>
+        <div class="grid">
+          <section class="service grid-span-4" id="fractional-leadership">
+            <h3 class="color-cool-grey">Fractional Leadership & Advisory</h3>
+            <ul>
+              <li>Fractional CTO, CPO, or CPTO</li>
+              <li>
+                Strategic guidance for AI adoption, product-market fit, and org
+                design
+              </li>
+              <li>
+                Consulting for early- to mid-stage startups on innovation, org
+                structure, and execution
+              </li>
+            </ul>
+          </section>
 
-        <section class="service" id="fractional-leadership">
-          <h3>Fractional Leadership & Advisory</h3>
-          <ul>
-            <li>Fractional CTO, CPO, or CPTO</li>
-            <li>
-              Strategic guidance for AI adoption, product-market fit, and org
-              design
-            </li>
-            <li>
-              Consulting for early- to mid-stage startups on innovation, org
-              structure, and execution
-            </li>
-          </ul>
-        </section>
+          <section class="service grid-span-4" id="ai-product">
+            <h3 class="color-cool-grey">AI Product Strategy & Development</h3>
+            <ul>
+              <li>End-to-end AI product roadmap planning</li>
+              <li>GenAI feature strategy and use case validation</li>
+              <li>Data moat strategy and ethical AI frameworks</li>
+            </ul>
+          </section>
 
-        <section class="service" id="ai-product">
-          <h3>AI Product Strategy & Development</h3>
-          <ul>
-            <li>End-to-end AI product roadmap planning</li>
-            <li>GenAI feature strategy and use case validation</li>
-            <li>Data moat strategy and ethical AI frameworks</li>
-          </ul>
-        </section>
-
-        <section class="service" id="speaking-events">
-          <h3>Speaking, Events & Workshops</h3>
-          <ul>
-            <li>Keynotes on the future of work, creativity, and AI</li>
-            <li>Panels or moderating on AI, product, and tech topics</li>
-            <li>
-              Available for speaking engagements, custom events, and team
-              sessions
-            </li>
-          </ul>
-        </section>
+          <section class="service grid-span-4" id="speaking-events">
+            <h3 class="color-cool-grey">Speaking, Events & Workshops</h3>
+            <ul>
+              <li>Keynotes on the future of work, creativity, and AI</li>
+              <li>Panels or moderating on AI, product, and tech topics</li>
+              <li>
+                Available for speaking engagements, custom events, and team
+                sessions
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
     </main>
 
