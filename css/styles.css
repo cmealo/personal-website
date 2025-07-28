@@ -1,3 +1,84 @@
+/* COLORS -------------- */
+
+/*--- Solid Background Utility Classes --- */
+
+.bg-color-black {
+  background-color: #000000;
+}
+.bg-color-indigo {
+  background-color: #1a103d;
+}
+.bg-color-electric-purple {
+  background-color: #4a00e0;
+}
+.bg-color-soft-purple {
+  background-color: #8e2de2;
+}
+.bg-color-electric-teal {
+  background-color: #00ffe0;
+}
+.bg-color-cool-grey {
+  background-color: #1e1e25;
+}
+.bg-color-super-lite-cool-grey {
+  background-color: #f7f9fa;
+}
+
+/* --- Font Color Utility Classes --- */
+
+.color-black {
+  color: #000000;
+}
+.color-white {
+  color: #ffffff;
+}
+.color-indigo {
+  color: #1a103d;
+}
+.color-electric-purple {
+  color: #4a00e0;
+}
+.color-soft-purple {
+  color: #8e2de2;
+}
+.color-electric-teal {
+  color: #00ffe0;
+}
+.color-cool-grey {
+  color: #1e1e25;
+}
+.color-super-lite-cool-grey {
+  color: #f7f9fa;
+}
+
+/*--- Gradient Utility Classes --- */
+
+.grad-a {
+  background: linear-gradient(90deg, #000000, #4a00e0);
+}
+
+.grad-b {
+  background: linear-gradient(90deg, #1a103d, #00ffe0);
+}
+
+.grad-c {
+  background: linear-gradient(90deg, #8e2de2, #00ffe0);
+}
+
+.grad-d {
+  background: linear-gradient(90deg, #000000, #4a00e0, #00ffe0);
+}
+
+.grad-e {
+  background: linear-gradient(90deg, #000000, #8e2de2, #00ffe0);
+}
+
+.grad-f {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2, #00ffe0);
+}
+
+/* NAVIGATION ------------------ */
+
 /* --- Nav Wrapper Layout --- */
 .nav-wrapper {
   display: flex;
@@ -11,7 +92,6 @@
 .logo {
   font-weight: 700;
   font-size: 1.25rem;
-  color: #111;
 }
 
 /* Mobile Nav Stack */
@@ -29,12 +109,12 @@
 .nav li a {
   text-decoration: none;
   color: #111;
-  font-weight: 500;
+  font-weight: 700;
   transition: color 0.2s;
 }
 
 .nav li a:hover {
-  color: #555;
+  color: #ffffff;
 }
 
 /* Horizontal Layout for Desktop */
@@ -44,6 +124,19 @@
     justify-content: flex-end;
     gap: 1rem;
   }
+}
+
+/* CONTENT  ------------------ */
+
+/* --- Basic headings --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 /* --- Basic Layout --- */
@@ -57,7 +150,7 @@ body {
 
 /* --- Global Section Spacing --- */
 section {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem 0.5rem 1rem; /* top, right, bottom, left */
 }
 
 /* --- Grid Container --- */
@@ -132,6 +225,8 @@ section {
   max-width: 100%;
 }
 
+/* FORM  ------------------ */
+
 /* --- Form layout --- */
 .form {
   display: grid;
@@ -170,4 +265,25 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #333;
+}
+
+blockquote {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.6;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* FOOTER -----------  */
+
+footer {
+  padding: 1rem 1rem 0.5rem 1rem; /* top, right, bottom, left */
+  background-color: #000;
+  color: #fff;
 }
