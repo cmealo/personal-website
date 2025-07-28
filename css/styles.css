@@ -1,3 +1,51 @@
+/* --- Nav Wrapper Layout --- */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+/* Logo Styling */
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #111;
+}
+
+/* Mobile Nav Stack */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+/* Nav Links */
+.nav li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav li a:hover {
+  color: #555;
+}
+
+/* Horizontal Layout for Desktop */
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}
+
 /* --- Basic Layout --- */
 body {
   margin: 0;
@@ -15,7 +63,7 @@ section {
 /* --- Grid Container --- */
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   grid-template-columns: repeat(12, 1fr);
 }
 
@@ -75,4 +123,51 @@ section {
   .grid-span-12 {
     grid-column: span 12;
   }
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* --- Form layout --- */
+.form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.25rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
 }
