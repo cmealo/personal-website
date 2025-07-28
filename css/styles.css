@@ -18,7 +18,7 @@
   background-color: #00ffe0;
 }
 .bg-color-cool-grey {
-  background-color: #1e1e25;
+  background-color: #363645;
 }
 .bg-color-super-lite-cool-grey {
   background-color: #f7f9fa;
@@ -38,14 +38,20 @@
 .color-electric-purple {
   color: #4a00e0;
 }
+.color-md-purple {
+  color: #6708bb;
+}
 .color-soft-purple {
   color: #8e2de2;
+}
+.color-md-blue {
+  color: #2a71f4;
 }
 .color-electric-teal {
   color: #00ffe0;
 }
 .color-cool-grey {
-  color: #1e1e25;
+  color: #363645;
 }
 .color-super-lite-cool-grey {
   color: #f7f9fa;
@@ -150,7 +156,7 @@ body {
 
 /* --- Global Section Spacing --- */
 section {
-  padding: 1rem 1rem 0.5rem 1rem; /* top, right, bottom, left */
+  padding: 1rem 1rem 1rem 1rem; /* top, right, bottom, left */
 }
 
 /* --- Grid Container --- */
@@ -286,4 +292,25 @@ footer {
   padding: 1rem 1rem 0.5rem 1rem; /* top, right, bottom, left */
   background-color: #000;
   color: #fff;
+}
+
+/* OTHER SPECIAL CLASSES & OVERRIDES */
+
+/* Remove top padding */
+.no-pt {
+  padding-top: 0 !important;
+}
+
+/* Remove bottom padding */
+.no-pb {
+  padding-bottom: 0 !important;
+}
+
+.no-mt {
+  margin-top: 0 !important;
+}
+
+/* Remove bottom margin */
+.no-mb {
+  margin-bottom: 0 !important;
 }
